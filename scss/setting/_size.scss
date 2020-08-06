@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+
+//____________________________
+//メディアクエリ
+//____________________________
+$layout-width-inner: 1024px;
+// or 960px
+
+$msp: "only screen and (max-width:321px)";
+$sp: "only screen and (max-width:480px)";
+$tab: "only screen and (min-width:481px) and (max-width:767px)";
+$btab: "screen and (min-width:768px) and (max-width: #{$layout-width-inner - 1px})";
+$pc: "only screen and (min-width:#{$layout-width-inner})";
