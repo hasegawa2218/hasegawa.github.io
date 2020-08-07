@@ -1,4 +1,5 @@
-
+Sassのコンパイルは拡張機能で。ベンダーは拡張機能（手動でscssに行う。自動に変更する可能性あり）
+watchはcontrol+cで停止
 PhotoShopからのコーディング
   文字情報(XD,Illustrator共通)
     font-family

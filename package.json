@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch:pug2html": "pug pug/ --hierarchy -o dist/ -w -P"
+    "watch:pug2html": "pug src/pug/ --hierarchy -o dist/ -w -P",
+    "start:server": "browser-sync start -s dist -w dist/*.html src/scss/*.css src/js/*.js",
+    "watch:ts": "tsc --rootDir src/ts --outDir src/js -w",
+    "watch:img": "chokidar \"src/img/**/*\" --command \"node imagemin.js\" --initial",
+    "delete:dist": "rimraf dist",
+    "watch:all": "run-p watch:pug2html watch:ts  start:server"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,16 @@
   "homepage": "https://github.com/hasegawa2218/hasegawa2218.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.26.12",
-    "pug-cli": "github:pugjs/pug-cli#master"
+    "imagemin-cli": "^6.0.0",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-keep-folder": "^5.3.2",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.0",
+    "imagemin-svgo": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "github:pugjs/pug-cli#master",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.9.7",
+    "uglify-es": "^3.3.9"
   }
 }

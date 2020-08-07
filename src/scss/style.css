@@ -1,0 +1,91 @@
+html{
+  font-size: 62.5%;
+  /* -> 10px; */
+}
+
+.br__pc{
+  display: none;
+}
+
+@media only screen and (min-width: 1024px){
+  .br__pc{
+    display: inline;
+  }
+}
+
+.br__tab{
+  display: none;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+  .br__tab{
+    display: inline;
+  }
+}
+
+.br__sp{
+  display: none;
+}
+
+@media only screen and (max-width: 480px){
+  .br__sp{
+    display: inline;
+  }
+}
+
+.inner{
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 480px){
+  .inner{
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
+
+.link{
+  background-color: #efa336;
+}
+
+.link .section-space{
+  padding: 10rem 0;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+  .link .section-space{
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .link .section-space{
+    padding: 5rem 0;
+  }
+}
+
+.test{
+  color: white;
+  background-color: #ffffff;
+}
+
+.test .section-space{
+  padding: 10rem 0;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px){
+  .test .section-space{
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .test .section-space{
+    padding: 5rem 0;
+  }
+}

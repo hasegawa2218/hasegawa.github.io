@@ -1,4 +1,4 @@
-@import "../../style";
+
 .link{
   background-color: $main-color;
   .section-space{
@@ -10,4 +10,5 @@
   .section-space{
     @include section-space-p();
   }
+  color: white;
 }
