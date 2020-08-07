@@ -1,11 +1,13 @@
 @import "../../style";
-
-  .test-style{
+.link{
+  background-color: $main-color;
+  .section-space{
     @include section-space-p();
-    @include flex();
-    @include bg();
-    @include transition();
-    @include mq('sp'){
-      color: $white;
-    };
   }
+}
+.test{
+  background-color: $white;
+  .section-space{
+    @include section-space-p();
+  }
+}

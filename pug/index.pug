@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+- var pagename='ページ名'
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title #{pagename}
+  body
+    section.link
+      .section-space
+        .inner
+          //- 属性は丸括弧内に記述する属性と値は要素に続けて（attr=”value”）という形で記述IDとClassも属性なので、同じように書くことができます。
+          //- 改行せずに入れ子「:」 ＋ 半角スペース
+          li: a(href="/template/module-check.html")
+          //- Classは「.」、IDは「#」で表します。classやidは要素に続けて記述します。
+          .test.pug-test
+          //- HTMLはドット（.）で終わる要素の中に入れておけばそのまま出せます。
+          .
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9xLvF6xoG30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            .a
