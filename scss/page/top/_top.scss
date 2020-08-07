@@ -1,0 +1,12 @@
+
+
+
+.test-style{
+  @include section-space-p();
+  @include flex();
+  @include bg();
+  @include transition();
+  @include mq('sp'){
+    color: $white;
+  };
+}

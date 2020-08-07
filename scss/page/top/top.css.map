@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "top.scss",
+        "../../setting/_color.scss",
+        "../../setting/_size.scss",
+        "../../mixin/_mixin.scss",
+        "../../mixin/_font.scss"
+    ],
+    "names": [],
+    "file": "top.css"
+}

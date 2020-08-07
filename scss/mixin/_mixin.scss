@@ -1,20 +1,44 @@
-@charset "UTF-8";
-// 他ファイルに入らないその他すべてのmixin
+// 他ファイルに該当しないその他すべてのmixin
 
-@mixin flex {
+@mixin flex{
   display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+  display:    -moz-flex;
+  display:     -ms-flex;
+  display:      -o-flex;
+  display:         flex;
 }
-@mixin bg {
+@mixin bg{
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@mixin mq($breakpoint: sp) {
-  @media #{map-get($breakpoints, $breakpoint)} {
+@mixin transition{
+  transition: .3s;
+}
+
+@mixin mq($breakpoint: sp){
+  @media #{map-get($breakpoints, $breakpoint)}{
     @content;
+  }
+}
+
+
+@mixin section-space-p(){
+  padding: 10rem 0;
+  @include mq("tab"){
+    padding: 8rem 0;
+  }
+  @include mq("sp"){
+    padding: 5rem 0;
+  }
+}
+
+@mixin section-space-m(){
+  margin: 10rem 0;
+  @include mq("tab"){
+    margin: 8rem 0;
+  }
+  @include mq("sp"){
+    margin: 5rem 0;
   }
 }

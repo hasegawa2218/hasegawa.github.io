@@ -1,0 +1,33 @@
+
+.br{
+  &__pc{
+    @include mq('pc'){
+      display: inline;
+    }
+    display: none;
+  }
+  &__tab{
+    @include mq('tab'){
+      display: inline;
+    }
+    display: none;
+  }
+  &__sp{
+    @include mq('sp'){
+      display: inline;
+    }
+    display: none;
+  }
+}
+.inner{
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 1.6rem;
+  padding-left: 1.6rem;
+  margin: 0 auto;
+  overflow: hidden;
+  @include mq('sp'){
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+}
